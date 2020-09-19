@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Proyecto-Veterinaria</string>
+    <string-array name="itemsInicio">
+        <item>Veterinario</item>
+        <item>Cliente</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <string-array name="itemsRegistro">
+        <item>Veterinario</item>
+        <item>Cliente</item>
+    </string-array>
+
+    <string-array name="itemsVeterinario">
+        <item> </item>
+        <item>Editar</item>
+        <item>Cerrar sesión</item>
+    </string-array>
+
 </resources>
