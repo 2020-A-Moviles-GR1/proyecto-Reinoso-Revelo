@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".EditarPerfilVeterinarioActivity"></activity>
+        <activity android:name=".DetallesCitaActivity" />
+        <activity android:name=".PantallaPrincipalVeterinarioActivity" />
+        <activity android:name=".LoginClienteActivity" />
+        <activity android:name=".LoginVeterinarioActivity" />
+        <activity android:name=".RegistroClienteActivity" />
+        <activity android:name=".RegistroVeterinarioActivity" />
+        <activity android:name=".PantallaAdministradorActivity" />
+        <activity android:name=".LoginAdminActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

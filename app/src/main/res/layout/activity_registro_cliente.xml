@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroClienteActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back_registro_cliente"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backveterinaria" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Registro cliente"
+        app:layout_constraintEnd_toEndOf="@+id/btn_back_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_back_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back_registro_cliente" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cédula de identidad"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/edt_cedula_registro_cliente"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Ingrese su cédula"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        app:layout_constraintEnd_toEndOf="@+id/edt_cedula_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_cedula_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cedula_registro_cliente" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nombre_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombre_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombre_registro_cliente" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        app:layout_constraintEnd_toEndOf="@+id/edt_apellido_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_apellido_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_apellido_registro_cliente" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo electrónico"
+        app:layout_constraintEnd_toEndOf="@+id/edt_celular_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_celular_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_celular_registro_cliente" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        app:layout_constraintEnd_toEndOf="@+id/edt_correo_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_correo_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_correo_registro_cliente" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        app:layout_constraintEnd_toEndOf="@+id/edt_usuario_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_usuario_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_usuario_registro_cliente" />
+
+    <EditText
+        android:id="@+id/edt_nombre_registro_cliente"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/edt_apellido_registro_cliente"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/edt_celular_registro_cliente"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su celular"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/edt_correo_registro_cliente"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su correo electrónico"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/edt_contrasen_registro_cliente"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/edt_usuario_registro_cliente"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/btn_registrar_cliente"
+        android:layout_width="375dp"
+        android:layout_height="47dp"
+        android:text="REGISTRARSE"
+        app:layout_constraintEnd_toEndOf="@+id/edt_contrasen_registro_cliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_contrasen_registro_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/edt_contrasen_registro_cliente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
