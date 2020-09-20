@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilDeMascotaActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconoperfilmascotados" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Perfil Mascota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nombre_perfil_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nombre: "
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/tv_peso_perfil_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Peso: "
+        app:layout_constraintEnd_toEndOf="@+id/tv_nombre_perfil_mascota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nombre_perfil_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_perfil_mascota" />
+
+    <TextView
+        android:id="@+id/tv_edad_perfil_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Edad: "
+        app:layout_constraintEnd_toEndOf="@+id/tv_peso_perfil_mascota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_peso_perfil_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/tv_peso_perfil_mascota" />
+
+    <TextView
+        android:id="@+id/tv_raza_perfil_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Raza: "
+        app:layout_constraintEnd_toEndOf="@+id/tv_edad_perfil_mascota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_edad_perfil_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edad_perfil_mascota" />
+
+    <TextView
+        android:id="@+id/tv_especie_perfil_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Especie:"
+        app:layout_constraintEnd_toEndOf="@+id/tv_raza_perfil_mascota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_raza_perfil_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/tv_raza_perfil_mascota" />
+
+    <TextView
+        android:id="@+id/tv_fecha_nacimiento_perfil_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Fecha de nacimiento :"
+        app:layout_constraintEnd_toEndOf="@+id/tv_especie_perfil_mascota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_especie_perfil_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/tv_especie_perfil_mascota" />
+
+    <Button
+        android:id="@+id/btn_agregar_nueva_cita"
+        android:layout_width="371dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:text="Agendar nueva cita"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fecha_nacimiento_perfil_mascota"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/tv_fecha_nacimiento_perfil_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha_nacimiento_perfil_mascota" />
+
+    <Button
+        android:id="@+id/btn_editar_mascota"
+        android:layout_width="372dp"
+        android:layout_height="49dp"
+        android:text="editar mascota"
+        app:layout_constraintEnd_toEndOf="@+id/btn_agregar_nueva_cita"
+        app:layout_constraintStart_toStartOf="@+id/btn_agregar_nueva_cita"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar_nueva_cita" />
+
+    <Button
+        android:id="@+id/btn_eliminar_mascota_perfil"
+        android:layout_width="370dp"
+        android:layout_height="47dp"
+        android:text="eliminar mascota "
+        app:layout_constraintEnd_toEndOf="@+id/btn_editar_mascota"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="@+id/btn_editar_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar_mascota" />
+
+    <Button
+        android:id="@+id/btn_visualizar_historial_mascota"
+        android:layout_width="369dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:text="VISUALIZAR HISTORIAL"
+        app:layout_constraintEnd_toEndOf="@+id/btn_editar_mascota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_editar_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar_mascota" />
+
+    <ImageButton
+        android:id="@+id/btn_back_perfil_mascota"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backveterinaria" />
+</androidx.constraintlayout.widget.ConstraintLayout>

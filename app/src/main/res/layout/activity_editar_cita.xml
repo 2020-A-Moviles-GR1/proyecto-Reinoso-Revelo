@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarCitaActivity">
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Editar cita "
+        app:layout_constraintEnd_toEndOf="@+id/btn_bakc_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_bakc_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bakc_editar_cita" />
+
+    <ImageButton
+        android:id="@+id/btn_bakc_editar_cita"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backveterinaria" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nombre"
+        app:layout_constraintEnd_toEndOf="@+id/textView75"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView75"
+        app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso (Kg)"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nombre_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombre_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombre_editar_cita" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad (años)"
+        app:layout_constraintEnd_toEndOf="@+id/edt_peso_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_peso_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_peso_editar_cita" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raza"
+        app:layout_constraintEnd_toEndOf="@+id/edt_edad_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_edad_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edad_editar_cita" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Especie"
+        app:layout_constraintEnd_toEndOf="@+id/edt_raza_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_raza_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_raza_editar_cita" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de nacimiento"
+        app:layout_constraintEnd_toEndOf="@+id/edt_especie_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_especie_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_especie_editar_cita" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        app:layout_constraintEnd_toEndOf="@+id/edt_fecha_nacim_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_fecha_nacim_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fecha_nacim_editar_cita" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        app:layout_constraintEnd_toEndOf="@+id/edt_fecha_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_fecha_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fecha_editar_cita" />
+
+    <EditText
+        android:id="@+id/edt_nombre_editar_cita"
+        android:layout_width="331dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView76"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView76"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <EditText
+        android:id="@+id/edt_peso_editar_cita"
+        android:layout_width="329dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView77"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView77"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <EditText
+        android:id="@+id/edt_edad_editar_cita"
+        android:layout_width="329dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView78"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView78"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <EditText
+        android:id="@+id/edt_raza_editar_cita"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView79"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <EditText
+        android:id="@+id/edt_especie_editar_cita"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView80"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+    <EditText
+        android:id="@+id/edt_fecha_nacim_editar_cita"
+        android:layout_width="329dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView81"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView81"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <EditText
+        android:id="@+id/edt_fecha_editar_cita"
+        android:layout_width="326dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:hint="fecha de la cita"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/textView82"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView82"
+        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+    <EditText
+        android:id="@+id/edt_hora_editar_cita"
+        android:layout_width="330dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Hora de la cita"
+        android:inputType="time"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/textView83"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView83"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+    <Button
+        android:id="@+id/btn_editar_cita"
+        android:layout_width="363dp"
+        android:layout_height="35dp"
+        android:text="Editar cita "
+        app:layout_constraintEnd_toEndOf="@+id/edt_hora_editar_cita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_hora_editar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/edt_hora_editar_cita" />
+</androidx.constraintlayout.widget.ConstraintLayout>

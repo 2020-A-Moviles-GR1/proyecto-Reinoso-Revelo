@@ -14,8 +14,13 @@ class LoginClienteActivity : AppCompatActivity() {
             .setOnClickListener{
                 irInicio()
             }
+        btn_iniciar_secion_cliente
+            .setOnClickListener{
+                irMenuDuenioMascota()
+            }
 
     }
+
     //continua aqui-Menu dueño mascota
     fun irInicio(){
         val intentExplicito= Intent(
@@ -24,4 +29,13 @@ class LoginClienteActivity : AppCompatActivity() {
         )
         this.startActivity(intentExplicito)
     }
+
+    fun irMenuDuenioMascota(){
+        val intentExplicito= Intent(
+            this,
+            MenuDuenioMascotaActivity::class.java
+        )
+        this.startActivity(intentExplicito)
+    }
+
 }

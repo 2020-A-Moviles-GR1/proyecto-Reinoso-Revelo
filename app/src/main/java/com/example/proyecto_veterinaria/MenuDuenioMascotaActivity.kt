@@ -1,37 +1,35 @@
 package com.example.proyecto_veterinaria
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.DialogInterface
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
-import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_detalles_cita.*
+import kotlinx.android.synthetic.main.activity_menu_duenio_mascota.*
 import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 
-
-class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
+class MenuDuenioMascotaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pantalla_principal_veterinario)
+        setContentView(R.layout.activity_menu_duenio_mascota)
+        cargarSipinerCliente()
 
-        cargarSipinerVeterinario()
-
-        sp_veterinario.setOnItemSelectedListener(object : OnItemSelectedListener {
+        sp_duenio_mascota.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 arg0: AdapterView<*>?, arg1: View,
                 arg2: Int, arg3: Long
             ) {
-                val itemspiner: String = sp_veterinario.getSelectedItem().toString()
+                val itemspiner: String = sp_duenio_mascota.getSelectedItem().toString()
                 Log.i("List","position $itemspiner")  //if para ir a las otras pantallas
                 if(itemspiner=="Editar"){
-                    irEditarPerfilVeterinario()
+                    irEditarPerfilDuenio()
                 }else if(itemspiner=="Cerrar sesión"){
                     confirmacionSalida()
                 }
@@ -41,21 +39,30 @@ class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
             }
         })
 
-        btn_paciente_atendido_veterinario
-            .setOnClickListener{
-                irDetalleCitaActivity()
-            }
-
-        edt_fecha_cita_pant_veterinario
+        //edt_hora_cita_cliente
+        //    .setOnClickListener {
+        //        showTimePickerDialog()
+        //   }
+        edt_fecha_cita_duenio
             .setOnClickListener {
                 showDatePickerDialog()
             }
+        btn_mascota_nueva_menu_duenio
+            .setOnClickListener {
+                irRegistroMascota()
+            }
 
+        tv_menu_duenio_mascota
+            .setOnClickListener {
+                //irInformacionDeCita()
+                irPerfilDeMascota()
+            }
 
     }
 
-    fun cargarSipinerVeterinario(){
-        val spinner: Spinner = findViewById(R.id.sp_veterinario)
+
+    fun cargarSipinerCliente(){
+        val spinner: Spinner = findViewById(R.id.sp_duenio_mascota)
         ArrayAdapter.createFromResource(
             this,
             R.array.itemsVeterinario,
@@ -66,27 +73,37 @@ class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
         }
     }
 
-    fun irDetalleCitaActivity(){
-        val intentExplicito= Intent(
-            this,
-            DetallesCitaActivity::class.java
-        )
-        this.startActivity(intentExplicito)
-    }
+    /*fun showTimePickerDialog() {
+
+        val newFragment = TimePickerFragment.newInstance(TimePickerDialog.OnTimeSetListener { _, hourOfDay, minute ->
+            val selectedTime =hourOfDay.toString()+":"+minute
+            edt_hora_cita_cliente.setText(selectedTime)//setea el text view
+        } )
+        newFragment.show(supportFragmentManager, "timePicker")
+    }*/
 
     fun showDatePickerDialog() {
         val newFragment = DatePickerFragment.newInstance(DatePickerDialog.OnDateSetListener { _, year, month, day ->
             // +1 because January is zero
             val selectedDate = day.toString() + " / " + (month + 1) + " / " + year
-            edt_fecha_cita_pant_veterinario.setText(selectedDate)
+            edt_fecha_cita_duenio.setText(selectedDate)
         })
         newFragment.show(supportFragmentManager, "datePicker")
     }
 
-    fun irEditarPerfilVeterinario(){
+    fun irRegistroMascota(){
         val intentExplicito= Intent(
             this,
-            EditarPerfilVeterinarioActivity::class.java
+            RegistroMascotaActivity::class.java
+        )
+        this.startActivity(intentExplicito)
+    }
+
+
+    fun irEditarPerfilDuenio(){
+        val intentExplicito= Intent(
+            this,
+            PerfilDuenioActivity::class.java
         )
         this.startActivity(intentExplicito)
     }
@@ -115,5 +132,21 @@ class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
             .show()
     }
 
+    fun irInformacionDeCita(){
+        val intentExplicito= Intent(
+            this,
+            InformacionDeCitaActivity::class.java
+        )
+        this.startActivity(intentExplicito)
+    }
+
+
+    fun irPerfilDeMascota(){
+        val intentExplicito= Intent(
+            this,
+            PerfilDeMascotaActivity::class.java
+        )
+        this.startActivity(intentExplicito)
+    }
 
 }
