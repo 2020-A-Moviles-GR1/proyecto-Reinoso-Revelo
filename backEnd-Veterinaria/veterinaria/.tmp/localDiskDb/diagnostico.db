@@ -1,2 +1,2 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"fechaAtencionDiagnostico":"20/09/2020","motivoConsultaDiagnostico":"Rivison Mensual","diagnosticoAtencion":"principios de rabia","cita":1,"createdAt":1600657379597,"updatedAt":1600657379597,"id":1,"_id":1}
+{"createdAt":1600657379597,"updatedAt":1600657379597,"id":1,"fechaAtencionDiagnostico":"20/09/2020","motivoConsultaDiagnostico":"Rivison Mensual","diagnosticoAtencion":"principios de rabia","cita":1,"_id":1}

@@ -1,2 +1,2 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"24/09/2020","estadoAtencionCita":"Por Atender","mascota":1,"createdAt":1600657053242,"updatedAt":1600657053242,"id":1,"_id":1}
+{"createdAt":1600657053242,"updatedAt":1600657053242,"id":1,"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"24/09/2020","estadoAtencionCita":"Por Atender","mascota":1,"_id":1}
