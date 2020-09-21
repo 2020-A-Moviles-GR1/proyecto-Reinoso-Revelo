@@ -54,7 +54,7 @@ module.exports = {
       defaultsTo:'Soltero'
     },
 
-    Mascota:{//one to many (plural)
+    mascota:{//one to many (plural)
       collection: "mascota", //referenci al modelo
       via:"usuario" //Nombre fk en pokemon
     }
