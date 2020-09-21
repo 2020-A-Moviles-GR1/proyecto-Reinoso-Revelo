@@ -1,0 +1,2 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"fechaVacuna":"20/09/2020","tipoVacuna":"contra la rabia","numDosisVacuna":"10 ml","cita":1,"createdAt":1600657229065,"updatedAt":1600657229065,"id":1,"_id":1}

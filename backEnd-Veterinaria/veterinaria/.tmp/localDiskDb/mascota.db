@@ -1,0 +1,2 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"createdAt":1600655070346,"updatedAt":1600655070346,"id":1,"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"a anio","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
