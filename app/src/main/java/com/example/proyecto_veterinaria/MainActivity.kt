@@ -6,9 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import com.beust.klaxon.Klaxon
+import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    val urlPrincipal = "http://192.168.0.103:1337"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +27,7 @@ class MainActivity : AppCompatActivity() {
                 if(text=="Veterinario"){
                     irLoguinVeterinario()
                 }else if(text=="Cliente"){
+                    obtenerUsuarios()
                     irLoguinCliente()
                 }else if(text=="Administrador"){
                     irLoguinAdmin()
@@ -108,6 +113,37 @@ class MainActivity : AppCompatActivity() {
         )
         this.startActivity(intentExplicito)
     }
+
+    fun obtenerUsuarios() {
+
+        val url = urlPrincipal + "/usuario"
+        url
+            .httpGet()
+            .responseString { request, response, result ->
+                when (result) {
+                    is Result.Success -> {
+                        val data = result.get()
+                        // Log.i("http-klaxon", "Data: ${data}")
+
+                        val usuarios= Klaxon()
+                            .parseArray<Usuario>(data)
+
+                        if(usuarios!=null){
+                            usuarios.forEach{
+                                Log.i("http-klaxon", "Nombre: ${it.nombre}  apellido ${it.apellido}")
+                            }
+                        }
+                    }
+
+                    is Result.Failure -> {
+                        val ex = result.getException()
+                        Log.i("http-klaxon", "Error: ${ex.message}")
+                    }
+                }
+            }
+    }
+
+
 
 
 }
