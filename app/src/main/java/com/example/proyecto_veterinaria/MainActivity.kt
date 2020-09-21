@@ -13,9 +13,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.103:1337"
+    lateinit var listaUsuarios:ArrayList<Usuario>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        listaUsuarios=arrayListOf()
         cargarSipinerSesion()
         cargarSipinerRegistr()
 
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 if(text=="Veterinario"){
                     irLoguinVeterinario()
                 }else if(text=="Cliente"){
-                    obtenerUsuarios()
+                    obtenerUsuarios()//prueba si, estamos recibiendo datos
                     irLoguinCliente()
                 }else if(text=="Administrador"){
                     irLoguinAdmin()
@@ -116,7 +118,11 @@ class MainActivity : AppCompatActivity() {
 
     fun obtenerUsuarios() {
 
-        val url = urlPrincipal + "/usuario"
+        //val url = urlPrincipal + "/usuario"
+        //val url = urlPrincipal + "/mascota"
+        //val url = urlPrincipal + "/cita"
+        //val url = urlPrincipal + "/vacuna"
+        val url = urlPrincipal + "/diagnostico"
         url
             .httpGet()
             .responseString { request, response, result ->
@@ -124,17 +130,20 @@ class MainActivity : AppCompatActivity() {
                     is Result.Success -> {
                         val data = result.get()
                         // Log.i("http-klaxon", "Data: ${data}")
-
                         val usuarios= Klaxon()
-                            .parseArray<Usuario>(data)
-
+                            .converter(Diagnostico.myConverter)
+                            .parseArray<Diagnostico>(data)
                         if(usuarios!=null){
                             usuarios.forEach{
-                                Log.i("http-klaxon", "Nombre: ${it.nombre}  apellido ${it.apellido}")
+                                //Log.i("http-klaxon", "Nombre: ${it.nombre}  apellido ${it.apellido}")
+                                //Log.i("http-klaxon", "Nombre: ${it.nombreMascota}  apellido ${it.pesoMascota}")
+                                //Log.i("http-klaxon", "Nombre: ${it.estadoAtencionCita}  apellido ${it.fechaProximaAtencionCita}")
+                                //Log.i("http-klaxon", "Nombre: ${it.tipoVacuna}  apellido ${it.numDosisVacuna}")
+                                Log.i("http-klaxon", "Nombre: ${it.fechaAtencionDiagnostico}  apellido ${it.motivoConsultaDiagnostico}")
+                                //listaUsuarios.add(it)
                             }
                         }
                     }
-
                     is Result.Failure -> {
                         val ex = result.getException()
                         Log.i("http-klaxon", "Error: ${ex.message}")
@@ -142,8 +151,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
     }
-
-
-
 
 }
