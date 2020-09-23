@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_registro_cliente.*
 import kotlinx.android.synthetic.main.activity_registro_veterinario.*
 
 class RegistroVeterinarioActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.103:1337"
+    val urlPrincipal = "http://192.168.0.102:1337"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_veterinario)

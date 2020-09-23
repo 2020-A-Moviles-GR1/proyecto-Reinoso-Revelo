@@ -3,6 +3,7 @@ package com.example.proyecto_veterinaria
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_menu_duenio_mascota.*
@@ -12,6 +13,15 @@ class RegistroCitaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_cita)
+
+        var mascota= intent.getParcelableExtra<MascotaDos>("mascotaA")
+
+        edt_nombre_masc_registro_cita.setText(mascota.nombreMascota)
+        edt_nombre_masc_registro_cita.setFocusable(false);
+        edt_nombre_masc_registro_cita.setEnabled(false);
+        edt_nombre_masc_registro_cita.setCursorVisible(false);
+        edt_nombre_masc_registro_cita.setKeyListener(null);
+        edt_nombre_masc_registro_cita.setBackgroundColor(Color.TRANSPARENT);
 
         btn_back_registro_cita
             .setOnClickListener {
@@ -26,7 +36,6 @@ class RegistroCitaActivity : AppCompatActivity() {
 
         edt_fecha_nacimi_masc_registro_cita
             .setOnClickListener {
-
                 showDatePickerDialog()
             }
 

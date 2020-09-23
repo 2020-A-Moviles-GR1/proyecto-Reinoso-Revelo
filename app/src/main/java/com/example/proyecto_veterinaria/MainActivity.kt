@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
         //val url = urlPrincipal + "/mascota"
         //val url = urlPrincipal + "/cita"
         //val url = urlPrincipal + "/vacuna"
-        val url = urlPrincipal + "/diagnostico"
+        val url = urlPrincipal + "/usuario"
         url
             .httpGet()
             .responseString { request, response, result ->
@@ -131,15 +131,16 @@ class MainActivity : AppCompatActivity() {
                         val data = result.get()
                         // Log.i("http-klaxon", "Data: ${data}")
                         val usuarios= Klaxon()
-                            .converter(Diagnostico.myConverter)
-                            .parseArray<Diagnostico>(data)
+                            //.converter(Diagnostico.myConverter)
+                            //.parseArray<Diagnostico>(data)
+                            .parseArray<Usuario>(data)
                         if(usuarios!=null){
                             usuarios.forEach{
-                                //Log.i("http-klaxon", "Nombre: ${it.nombre}  apellido ${it.apellido}")
+                                Log.i("http-klaxon", "Nombre: ${it.nombre}  apellido ${it.apellido}")
                                 //Log.i("http-klaxon", "Nombre: ${it.nombreMascota}  apellido ${it.pesoMascota}")
                                 //Log.i("http-klaxon", "Nombre: ${it.estadoAtencionCita}  apellido ${it.fechaProximaAtencionCita}")
                                 //Log.i("http-klaxon", "Nombre: ${it.tipoVacuna}  apellido ${it.numDosisVacuna}")
-                                Log.i("http-klaxon", "Nombre: ${it.fechaAtencionDiagnostico}  apellido ${it.motivoConsultaDiagnostico}")
+                                //Log.i("http-klaxon", "Nombre: ${it.fechaAtencionDiagnostico}  apellido ${it.motivoConsultaDiagnostico}")
                                 //listaUsuarios.add(it)
                             }
                         }

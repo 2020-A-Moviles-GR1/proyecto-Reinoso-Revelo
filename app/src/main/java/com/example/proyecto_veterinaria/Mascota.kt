@@ -17,7 +17,7 @@ class Mascota(
     var especieMascota: String?,
     var fechaNacimientoMascota: String?,
     var usuario: Any?,
-    var cita: ArrayList<*>? = null
+    var cita: ArrayList<Cita>? = null
 
 ) : Parcelable {
 
@@ -35,7 +35,7 @@ class Mascota(
         parcel.readString(),
         parcel.readString(),
         parcel.readSerializable() as Any,
-        parcel.readSerializable() as ArrayList<*>
+        parcel.readSerializable() as ArrayList<Cita>
     ) {
 
     }
@@ -55,8 +55,10 @@ class Mascota(
         parcel.writeString(razaMascota)
         parcel.writeString(especieMascota)
         parcel.writeString(fechaNacimientoMascota)
-        parcel.writeSerializable(usuario as Serializable?)
-        parcel.writeSerializable(cita)
+        //parcel.writeSerializable(usuario as Serializable?)
+        parcel.writeValue(usuario)
+        parcel.writeArray(arrayOf(cita))
+        //parcel.writeSerializable(cita)
     }
 
     override fun describeContents(): Int {
