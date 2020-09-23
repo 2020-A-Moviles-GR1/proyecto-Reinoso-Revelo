@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_perfil_de_mascota.*
 
@@ -11,6 +12,8 @@ class PerfilDeMascotaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_de_mascota)
+        val mascota= intent.getParcelableExtra<Mascota>("mascotaA")
+        Log.i("List","position $mascota")
 
         btn_agregar_nueva_cita
             .setOnClickListener {

@@ -1,4 +1,4 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"cedula","unique":true,"sparse":false}}
 {"createdAt":1600654121180,"updatedAt":1600654121180,"id":1,"cedula":"1725279077","nombre":"paul","apellido":"reinoso","telefono":"096362865","correo":"paul.reinoso@epn.edu","experiencia":"2 años","contrasenia":"sup3rSegur4","usuario":"paul32","rol":"Cliente","_id":1}
-{"cedula":"1725279075","nombre":"Raul","apellido":"Lopez","telefono":"09999293443","correo":"","experiencia":"3 años","contrasenia":"sup3rSegur4555","usuario":"raul555","rol":"Veterinario","createdAt":1600717742512,"updatedAt":1600717742512,"id":2,"_id":2}
+{"createdAt":1600717742512,"updatedAt":1600717742512,"id":2,"cedula":"1725279075","nombre":"Raul","apellido":"Lopez","telefono":"09999293443","correo":"","experiencia":"3 años","contrasenia":"sup3rSegur4555","usuario":"raul555","rol":"Veterinario","_id":2}

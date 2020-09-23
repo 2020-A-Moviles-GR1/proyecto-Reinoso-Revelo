@@ -12,13 +12,44 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
+import com.beust.klaxon.Klaxon
+import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_menu_duenio_mascota.*
 import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 
 class MenuDuenioMascotaActivity : AppCompatActivity() {
+    val urlPrincipal = "http://192.168.0.102:1337"
+    lateinit var listaMascotas:ArrayList<Mascota>
+    lateinit var adaptador :ArrayAdapter<Mascota>
+    var posicion:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_duenio_mascota)
+
+        listaMascotas=arrayListOf()
+        adaptador=ArrayAdapter(
+            this,//contexto
+            android.R.layout.simple_list_item_1,//nombre layout
+            listaMascotas//lista
+        )
+        lv_mascotas.adapter=adaptador
+        lv_mascotas
+            .onItemClickListener= AdapterView.OnItemClickListener{
+                parent, view, position, id ->
+            Log.i("List","position $position")
+            posicion=position
+            val mascota=listaMascotas.get(posicion)
+            Log.i("http-klaxon", "Universo Select:  ${mascota}")
+            val intentException= Intent(
+                this,
+                PerfilDeMascotaActivity::class.java
+            )
+            intentException.putExtra("mascotaA",mascota)
+            startActivity(intentException)
+            //irPerfilDeMascota()
+        }
+        obtenerMascotas()
         cargarSipinerCliente()
 
         sp_duenio_mascota.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
@@ -147,6 +178,36 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
             PerfilDeMascotaActivity::class.java
         )
         this.startActivity(intentExplicito)
+    }
+
+    fun obtenerMascotas() {
+        val url = urlPrincipal + "/mascota"
+        url
+            .httpGet()
+            .responseString { request, response, result ->
+                when (result) {
+                    is Result.Success -> {
+                        val data = result.get()
+                        Log.i("http-klaxon", "Data: ${data}")
+                        val mascotas= Klaxon()
+                            .converter(Mascota.myConverter)
+                            .parseArray<Mascota>(data)
+                        if(mascotas!=null){
+                            mascotas.forEach{
+                                Log.i("http-klaxon", "Nombre: ${it.nombreMascota}  tamaño: ${it.razaMascota}")
+                                listaMascotas.add(it)
+                            }
+                            runOnUiThread(Runnable {
+                                adaptador.notifyDataSetChanged()
+                            })
+                        }
+                    }
+                    is Result.Failure -> {
+                        val ex = result.getException()
+                        Log.i("http-klaxon", "Error: ${ex.message}")
+                    }
+                }
+            }
     }
 
 }

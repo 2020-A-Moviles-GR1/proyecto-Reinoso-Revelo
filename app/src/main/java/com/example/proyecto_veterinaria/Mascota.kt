@@ -17,7 +17,7 @@ class Mascota(
     var especieMascota: String?,
     var fechaNacimientoMascota: String?,
     var usuario: Any?,
-    var cita: ArrayList<Cita>? = null
+    var cita: ArrayList<*>? = null
 
 ) : Parcelable {
 
@@ -35,7 +35,7 @@ class Mascota(
         parcel.readString(),
         parcel.readString(),
         parcel.readSerializable() as Any,
-        parcel.readSerializable() as ArrayList<Cita>
+        parcel.readSerializable() as ArrayList<*>
     ) {
 
     }
@@ -150,4 +150,19 @@ class Mascota(
             return arrayOfNulls(size)
         }
     }
+
+    override fun toString(): String {
+
+        if (cita != null) {
+            return  "$nombreMascota               |" +
+                    "$especieMascota               |" +
+                    "$razaMascota"
+                    /*" |$razaMascota" + ("mascotas=$cita")*/
+        } else {
+        }
+        return  " '$nombreMascota'     " +
+                " |'$especieMascota'     " +
+                " |'$razaMascota'"+("")
+    }
+
 }
