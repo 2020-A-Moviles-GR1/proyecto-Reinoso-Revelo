@@ -9,11 +9,20 @@ import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_perfil_de_mascota.*
 
 class PerfilDeMascotaActivity : AppCompatActivity() {
+    lateinit var mascota: MascotaDos
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_de_mascota)
-        val mascota= intent.getParcelableExtra<Mascota>("mascotaA")
+
+
+        mascota= intent.getParcelableExtra<MascotaDos>("mascotaA")
         Log.i("List","position $mascota")
+        tv_nombre_perfil_mascota.setText("Nombre: " + mascota.nombreMascota)
+        tv_peso_perfil_mascota.setText("Peso: " + mascota.pesoMascota)
+        tv_edad_perfil_mascota.setText("Edad: " + mascota.edadMascota)
+        tv_raza_perfil_mascota.setText("Raza: " + mascota.razaMascota)
+        tv_especie_perfil_mascota.setText("Especie: " + mascota.especieMascota)
+        tv_fecha_nacimiento_perfil_mascota.setText("Fecha de nacimiento :" + mascota.fechaNacimientoMascota)
 
         btn_agregar_nueva_cita
             .setOnClickListener {
@@ -48,7 +57,9 @@ class PerfilDeMascotaActivity : AppCompatActivity() {
             this,
             RegistroCitaActivity::class.java
         )
+        intentExplicito.putExtra("mascotaA",mascota)
         this.startActivity(intentExplicito)
+
     }
 
     fun irMenuDuenioMascota(){

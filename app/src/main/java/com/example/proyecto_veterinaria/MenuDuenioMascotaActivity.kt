@@ -20,8 +20,8 @@ import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 
 class MenuDuenioMascotaActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.102:1337"
-    lateinit var listaMascotas:ArrayList<Mascota>
-    lateinit var adaptador :ArrayAdapter<Mascota>
+    lateinit var listaMascotas:ArrayList<MascotaDos>
+    lateinit var adaptador :ArrayAdapter<MascotaDos>
     var posicion:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -188,10 +188,11 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
                 when (result) {
                     is Result.Success -> {
                         val data = result.get()
-                        Log.i("http-klaxon", "Data: ${data}")
+                        Log.i("http-L", "Data: ${data}")
                         val mascotas= Klaxon()
-                            .converter(Mascota.myConverter)
-                            .parseArray<Mascota>(data)
+                            //.converter(Mascota.myConverter)
+                            //.parseArray<Mascota>(data)
+                            .parseArray<MascotaDos>(data)
                         if(mascotas!=null){
                             mascotas.forEach{
                                 Log.i("http-klaxon", "Nombre: ${it.nombreMascota}  tamaño: ${it.razaMascota}")

@@ -58,7 +58,8 @@ class LoginClienteActivity : AppCompatActivity() {
                         val data = result.get()
                         Log.i("http-klaxon", "Data: ${data}")
                         val usuarios= Klaxon()
-                            .converter(Usuario.myConverter)
+                            //.converter(Usuario.myConverter)
+                            //.parseArray<Usuario>(data)
                             .parseArray<Usuario>(data)
                         if(usuarios!=null){
                             usuarios.forEach{
