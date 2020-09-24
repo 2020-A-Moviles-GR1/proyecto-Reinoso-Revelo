@@ -37,25 +37,34 @@ class EditarMascotaActivity : AppCompatActivity() {
         btn_editar_mascota
             .setOnClickListener {
                 actualizarMascota()
-                Log.i("MascotaEditada", "idates de la fucnionObtenrer: ${mascota.id}")
-                obtenerMascotas(mascota.id)
+                Handler(Looper.getMainLooper()).postDelayed({
+                    obtenerMascotas()
+                }, 3000)
                 Handler(Looper.getMainLooper()).postDelayed({
                     irPerfilDeMascota()
                     limpiarCampos()
-                }, 6000)
-                //irPerfilDeMascota()
-                //limpiarCampos()
+                }, 7000)
             }
     }
 
     fun irPerfilDeMascota(){
-
+        var mascotaEditada:MascotaDos
         val intentExplicito= Intent(
             this,
             PerfilDeMascotaActivity::class.java
         )
-        intentExplicito.putExtra("mascotaA",mascotasEditadas[0])
-        this.startActivity(intentExplicito)
+        mascotasEditadas
+            .forEach{
+                if(it.id==mascota.id){
+                    mascotaEditada=it
+                    //Log.i("MascotaEditada", "peso antes de intent: ${mascotaEditada.pesoMascota}")
+                    intentExplicito.putExtra("mascotaA",mascotaEditada)
+                    this.startActivity(intentExplicito)
+                }
+            }
+        val peso=mascotasEditadas[0].pesoMascota
+        //Log.i("MascotaEditada", "peso antes de intent: ${peso}")
+
     }
 
     fun actualizarMascota() {
@@ -102,20 +111,23 @@ class EditarMascotaActivity : AppCompatActivity() {
         edt_fecha_nacimiento_editar_mascota.setText(null)
     }
 
-    fun obtenerMascotas(idMascota:Int){
-        Log.i("MascotaEditada", "Nombre: ${idMascota}")
-        val url = urlPrincipal + "/mascota/"+idMascota
+    fun obtenerMascotas(){
+        //Log.i("MascotaEditada", "antes de peticion: ${idMascota}")
+        //val url = urlPrincipal + "/mascota/"+idMascota
+        val url = urlPrincipal + "/mascota"
         url
             .httpGet()
             .responseString { request, response, result ->
                 when (result) {
                     is Result.Success -> {
                         val data = result.get()
+                        Log.i("MascotaEditada", "antes del parse de Klaxon: ${data}")
                         val mascotas= Klaxon()
                             .parseArray<MascotaDos>(data)
+                        Log.i("MascotaEditada", "despues del parse Klaxon: ${mascotas}")
                         if(mascotas!=null){
                             mascotas.forEach{
-                                Log.i("MascotaEditada", "Nombre: ${it.nombreMascota}  tamaño: ${it.pesoMascota}")
+                                Log.i("MascotaEditada", "tras en peticion: ${it.nombreMascota}  tamaño: ${it.pesoMascota}")
                                 mascotasEditadas.add(it)
                             }
                         }

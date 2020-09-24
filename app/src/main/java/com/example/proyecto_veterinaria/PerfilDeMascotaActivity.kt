@@ -87,6 +87,7 @@ class PerfilDeMascotaActivity : AppCompatActivity() {
             this,
             VisualizarHistorialActivity::class.java
         )
+        intentExplicito.putExtra("mascotaA",mascota)
         this.startActivity(intentExplicito)
     }
 
