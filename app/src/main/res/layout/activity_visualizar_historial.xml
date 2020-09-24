@@ -43,8 +43,8 @@
         android:id="@+id/textView103"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:text="Hora"
+        android:layout_marginStart="76dp"
+        android:text="Diagnostico"
         app:layout_constraintBottom_toBottomOf="@+id/textView102"
         app:layout_constraintStart_toEndOf="@+id/textView102"
         app:layout_constraintTop_toTopOf="@+id/textView102"
@@ -54,7 +54,7 @@
         android:id="@+id/textView104"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
+        android:layout_marginStart="75dp"
         android:text="Motivo"
         app:layout_constraintBottom_toBottomOf="@+id/textView103"
         app:layout_constraintStart_toEndOf="@+id/textView103"
@@ -63,10 +63,10 @@
 
     <ListView
         android:id="@+id/lv_historial_citas"
-        android:layout_width="360dp"
-        android:layout_height="312dp"
+        android:layout_width="403dp"
+        android:layout_height="310dp"
         app:layout_constraintEnd_toEndOf="@+id/textView104"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="@+id/textView102"
         app:layout_constraintTop_toBottomOf="@+id/textView103" />
 </androidx.constraintlayout.widget.ConstraintLayout>

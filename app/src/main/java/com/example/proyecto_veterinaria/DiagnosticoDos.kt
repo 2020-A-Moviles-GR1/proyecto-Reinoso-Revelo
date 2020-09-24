@@ -47,4 +47,21 @@ class DiagnosticoDos(
             return arrayOfNulls(size)
         }
     }
+
+    override fun toString(): String {
+
+        if (cita != null) {
+            return  "$fechaAtencionDiagnostico    |"+
+                    "$diagnosticoAtencion    |"+
+                    "$motivoConsultaDiagnostico"//+("citas=$cita")
+
+        } else {
+        }
+        return  "$fechaAtencionDiagnostico   |" +
+                "$diagnosticoAtencion   |" +
+                "$motivoConsultaDiagnostico"//+("citas=$cita"
+                //" fechaActualizacion=$fechaActualizacion)" + ("")
+    }
+
+
 }
