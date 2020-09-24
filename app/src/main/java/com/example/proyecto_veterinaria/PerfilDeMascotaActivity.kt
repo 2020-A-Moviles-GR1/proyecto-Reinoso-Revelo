@@ -16,7 +16,9 @@ class PerfilDeMascotaActivity : AppCompatActivity() {
 
 
         mascota= intent.getParcelableExtra<MascotaDos>("mascotaA")
-        Log.i("List","position $mascota")
+        Log.i("List","position ${mascota.pesoMascota}")
+
+
         tv_nombre_perfil_mascota.setText("Nombre: " + mascota.nombreMascota)
         tv_peso_perfil_mascota.setText("Peso: " + mascota.pesoMascota)
         tv_edad_perfil_mascota.setText("Edad: " + mascota.edadMascota)
@@ -76,6 +78,7 @@ class PerfilDeMascotaActivity : AppCompatActivity() {
             this,
             EditarMascotaActivity::class.java
         )
+        intentExplicito.putExtra("mascotaA",mascota)
         this.startActivity(intentExplicito)
     }
 

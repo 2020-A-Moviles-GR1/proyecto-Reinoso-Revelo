@@ -22,12 +22,14 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.102:1337"
     lateinit var listaMascotas:ArrayList<MascotaDos>
     lateinit var adaptador :ArrayAdapter<MascotaDos>
+    lateinit var listaUsuarioUnico:ArrayList<Usuario>
     var posicion:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_duenio_mascota)
 
         listaMascotas=arrayListOf()
+        listaUsuarioUnico=arrayListOf()
         adaptador=ArrayAdapter(
             this,//contexto
             android.R.layout.simple_list_item_1,//nombre layout
@@ -136,6 +138,7 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
             this,
             PerfilDuenioActivity::class.java
         )
+        //intentExplicito.putExtra("duenioA",obtenerDuenioMascota())
         this.startActivity(intentExplicito)
     }
 
@@ -210,5 +213,35 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
                 }
             }
     }
+
+    fun obtenerDuenioMascota(): Usuario {
+        val idUsuario= listaMascotas[0].usuario?.id
+        val url = urlPrincipal + "/usuario/"+idUsuario
+        url
+            .httpGet()
+            .responseString { request, response, result ->
+                when (result) {
+                    is Result.Success -> {
+                        val data = result.get()
+                        val usuarios= Klaxon()
+                            .parseArray<Usuario>(data)
+                        if(usuarios!=null){
+                            usuarios.forEach{
+                                Log.i("http-klaxon", "Nombre: ${it.nombre}  apellido ${it.apellido}")
+                                listaUsuarioUnico.add(it)
+                            }
+                        }
+                    }
+                    is Result.Failure -> {
+                        val ex = result.getException()
+                        Log.i("http-klaxon", "Error: ${ex.message}")
+                    }
+                }
+            }
+        return listaUsuarioUnico[0]
+    }
+
+
+
 
 }
