@@ -1,2 +1,58 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"createdAt":1600655070346,"updatedAt":1600655070346,"id":1,"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"a anio","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600916627905,"id":1,"nombreMascota":"cachetes","pesoMascota":"25 kg","edadMascota":"3 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600917078771,"id":1,"nombreMascota":"cachetes","pesoMascota":"15 kg","edadMascota":"5 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600917718118,"id":1,"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"2 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600917803150,"id":1,"nombreMascota":"cachetes","pesoMascota":"30 kg","edadMascota":"5 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600917999535,"id":1,"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"3 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600918208789,"id":1,"nombreMascota":"cachetes","pesoMascota":"1000 kg","edadMascota":"50 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600918562989,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"2 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600918720627,"id":1,"nombreMascota":"cachetes","pesoMascota":"25 kg","edadMascota":"3 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600918813296,"id":1,"nombreMascota":"cachetes","pesoMascota":"500 kg","edadMascota":"50 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600918841694,"id":1,"nombreMascota":"cachetes","pesoMascota":"50 kg","edadMascota":"50 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919019647,"id":1,"nombreMascota":"cachetes","pesoMascota":"5 kg","edadMascota":"5 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919132736,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"10 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919297592,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"10 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919335759,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"10 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919658007,"id":1,"nombreMascota":"cachetes","pesoMascota":"5 kg","edadMascota":"5 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919863785,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"15 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600919979285,"id":1,"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"3 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600920176039,"id":1,"nombreMascota":"cachetes","pesoMascota":"25 kg","edadMascota":"4 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600920353726,"id":1,"nombreMascota":"cachetes","pesoMascota":"25 kg","edadMascota":"4 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600920842020,"id":1,"nombreMascota":"cachetes","pesoMascota":"15 kg","edadMascota":"3 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600920898419,"id":1,"nombreMascota":"cachetes","pesoMascota":"5 kg","edadMascota":"20 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600921085454,"id":1,"nombreMascota":"cachetes","pesoMascota":"5 kg","edadMascota":"20 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600921093092,"id":1,"nombreMascota":"cachetes","pesoMascota":"5 kg","edadMascota":"20 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600921795958,"id":1,"nombreMascota":"cachetes","pesoMascota":"15 kg","edadMascota":"12 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600921891377,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"2 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600922099680,"id":1,"nombreMascota":"cachetes","pesoMascota":"15 kg","edadMascota":"20 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600922125682,"id":1,"nombreMascota":"cachetes","pesoMascota":"10 kg","edadMascota":"2 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600655070346,"updatedAt":1600922478798,"id":1,"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"20 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
