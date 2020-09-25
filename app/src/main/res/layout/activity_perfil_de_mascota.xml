@@ -12,7 +12,7 @@
         android:layout_height="57dp"
         android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconoperfilmascotados" />
@@ -75,7 +75,7 @@
         android:id="@+id/tv_especie_perfil_mascota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:text="Especie:"
         app:layout_constraintEnd_toEndOf="@+id/tv_raza_perfil_mascota"
         app:layout_constraintHorizontal_bias="0.0"
@@ -86,7 +86,7 @@
         android:id="@+id/tv_fecha_nacimiento_perfil_mascota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:text="Fecha de nacimiento :"
         app:layout_constraintEnd_toEndOf="@+id/tv_especie_perfil_mascota"
         app:layout_constraintHorizontal_bias="0.0"
@@ -99,9 +99,8 @@
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
         android:text="Agendar nueva cita"
-        app:layout_constraintEnd_toEndOf="@+id/tv_fecha_nacimiento_perfil_mascota"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="@+id/tv_fecha_nacimiento_perfil_mascota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_fecha_nacimiento_perfil_mascota" />
 
     <Button

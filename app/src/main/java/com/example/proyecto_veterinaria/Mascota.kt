@@ -55,8 +55,10 @@ class Mascota(
         parcel.writeString(razaMascota)
         parcel.writeString(especieMascota)
         parcel.writeString(fechaNacimientoMascota)
-        parcel.writeSerializable(usuario as Serializable?)
-        parcel.writeSerializable(cita)
+        //parcel.writeSerializable(usuario as Serializable?)
+        parcel.writeValue(usuario)
+        parcel.writeArray(arrayOf(cita))
+        //parcel.writeSerializable(cita)
     }
 
     override fun describeContents(): Int {
@@ -150,4 +152,19 @@ class Mascota(
             return arrayOfNulls(size)
         }
     }
+
+    override fun toString(): String {
+
+        if (cita != null) {
+            return  "$nombreMascota               |" +
+                    "$especieMascota               |" +
+                    "$razaMascota"
+                    /*" |$razaMascota" + ("mascotas=$cita")*/
+        } else {
+        }
+        return  " '$nombreMascota'     " +
+                " |'$especieMascota'     " +
+                " |'$razaMascota'"+("")
+    }
+
 }

@@ -2,13 +2,9 @@ package com.example.proyecto_veterinaria
 
 import android.os.Parcel
 import android.os.Parcelable
-import com.beust.klaxon.Converter
-import com.beust.klaxon.JsonArray
-import com.beust.klaxon.JsonValue
-import com.beust.klaxon.Klaxon
 import java.util.*
 
-class Usuario(
+class Usuario (
     var createdAt: Long,
     var updatedAt: Long,
     var id: Int,
@@ -21,9 +17,8 @@ class Usuario(
     var contrasenia: String?,
     var usuario: String?,
     var rol: String?,
-    var mascotas: ArrayList<Mascota>? = null
-
-) : Parcelable {
+    var mascotas: ArrayList<MascotaDos>? = null
+):Parcelable{
 
     var fechaCreacion: Date
     var fechaActualizacion: Date
@@ -41,9 +36,8 @@ class Usuario(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readSerializable() as ArrayList<Mascota>
+        parcel.readArrayList(MascotaDos::class.java.classLoader) as ArrayList<MascotaDos>?
     ) {
-
     }
 
     init {
@@ -64,7 +58,7 @@ class Usuario(
         parcel.writeString(contrasenia)
         parcel.writeString(usuario)
         parcel.writeString(rol)
-        parcel.writeSerializable(mascotas)
+        parcel.writeArray(arrayOf(mascotas))
     }
 
     override fun describeContents(): Int {
@@ -72,53 +66,6 @@ class Usuario(
     }
 
     companion object CREATOR : Parcelable.Creator<Usuario> {
-
-        val myConverter = object : Converter {
-            override fun canConvert(cls: Class<*>) = cls == Usuario::class.java
-
-            override fun toJson(value: Any): String {
-                val usuario = value as Usuario
-
-                return """
-                  {
-                    "createdAt": ${usuario.createdAt},
-                    "updatedAt": ${usuario.updatedAt},
-                    "id": ${usuario.id}, 
-                    "cedula": "${usuario.cedula}",
-                    "nombre": "${usuario.nombre}",
-                    "apellido": "${usuario.apellido}",
-                    "telefono": "${usuario.telefono}",
-                    "correo": "${usuario.correo}",
-                    "experiencia": "${usuario.experiencia}",
-                    "contrasenia": "${usuario.contrasenia}",
-                    "usuario": "${usuario.usuario}",
-                    "rol": "${usuario.rol}", 
-                    "mascota": ${Klaxon().toJsonString(usuario.mascotas as List<*>)}
-                   }
-                    }
-                """.trimMargin()
-            }
-
-            override fun fromJson(jv: JsonValue): Usuario {
-
-                return Usuario(
-                    jv.obj?.get("createdAt") as Long,
-                    jv.obj?.get("updatedAt") as Long,
-                    jv.objInt("id"),
-                    jv.objString("cedula"),
-                    jv.objString("nombre"),
-                    jv.objString("apellido"),
-                    jv.objString("telefono"),
-                    jv.objString("correo"),
-                    jv.objString("experiencia"),
-                    jv.objString("contrasenia"),
-                    jv.objString("usuario"),
-                    jv.objString("rol"),
-                    Klaxon().parseFromJsonArray<Mascota>(jv.obj?.get("mascota") as JsonArray<*>) as ArrayList<Mascota>
-                )
-            }
-        }
-
         override fun createFromParcel(parcel: Parcel): Usuario {
             return Usuario(parcel)
         }
@@ -127,6 +74,8 @@ class Usuario(
             return arrayOfNulls(size)
         }
     }
+
+
 
     override fun toString(): String {
 
@@ -148,5 +97,6 @@ class Usuario(
                 " fechaCreacion=$fechaCreacion," +
                 " fechaActualizacion=$fechaActualizacion)" + ("")
     }
+
 
 }
