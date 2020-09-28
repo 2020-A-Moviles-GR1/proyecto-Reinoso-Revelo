@@ -24,13 +24,15 @@ class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.115:1337"
     lateinit var listaCitas: ArrayList<CitaDos>
     lateinit var adaptador: ArrayAdapter<CitaDos>
+    lateinit var usuarioA: Usuario
     lateinit var listaUsuarioUnico: ArrayList<Usuario>
-    var posicion: Int = 0
+    var posicion:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla_principal_veterinario)
         listaCitas = arrayListOf()
         listaUsuarioUnico = arrayListOf()
+        usuarioA = intent.getParcelableExtra<Usuario>("usuarioA")
         adaptador = ArrayAdapter(
                 this,//contexto
                 android.R.layout.simple_list_item_1,//nombre layout
@@ -47,7 +49,8 @@ class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
                     this,
                     DetallesCitaActivity::class.java
             )
-            intentException.putExtra("mascotaA", cita)
+            intentException.putExtra("citaA", cita)
+            intentException.putExtra("usuarioA", usuarioA)
             startActivity(intentException)
             //irPerfilDeMascota()
         }
@@ -106,11 +109,12 @@ class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
     }
 
     fun irEditarPerfilVeterinario() {
-        val intentExplicito = Intent(
+        val intentException= Intent(
                 this,
                 EditarPerfilVeterinarioActivity::class.java
         )
-        this.startActivity(intentExplicito)
+        intentException.putExtra("usuarioA",usuarioA)
+        startActivity(intentException)
     }
 
     fun confirmacionSalida() {

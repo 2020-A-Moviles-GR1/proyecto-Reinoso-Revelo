@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_login_veterinario.*
 
 class LoginVeterinarioActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.115:1337"
+    lateinit var usuarioA: Usuario
     lateinit var listaUsuarios:ArrayList<Usuario>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +46,7 @@ class LoginVeterinarioActivity : AppCompatActivity() {
                 this,
                 PantallaPrincipalVeterinarioActivity::class.java
         )
+        intentExplicito.putExtra("usuarioA",usuarioA)
         this.startActivity(intentExplicito)
     }
 
@@ -82,6 +84,7 @@ class LoginVeterinarioActivity : AppCompatActivity() {
                 mensajeDeError()
             }else{
                 if(listaUsuarios[0].usuario==usuario&&listaUsuarios[0].contrasenia==contrasenia){
+                    usuarioA = listaUsuarios[0]
                     irPantallaPrincipalVeterinario()
                     mensajeIngreso()
                 }else{

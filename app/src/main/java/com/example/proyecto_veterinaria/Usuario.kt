@@ -85,7 +85,7 @@ class Usuario (
                     " updatedAt=$updatedAt," +
                     " cedula='$cedula'," +
                     " nombre='$nombre'," +
-                    " correo='$correo'" + ("mascotas=$mascotas")
+                    " apellido='$apellido'" + ("mascotas=$mascotas")
         } else {
         }
         return "Usuario (id=$id," +
@@ -93,7 +93,7 @@ class Usuario (
                 " updatedAt=$updatedAt," +
                 " cedula='$cedula'," +
                 " nombre='$nombre'," +
-                " correo='$correo'," +
+                " apellido='$apellido'," +
                 " fechaCreacion=$fechaCreacion," +
                 " fechaActualizacion=$fechaActualizacion)" + ("")
     }
