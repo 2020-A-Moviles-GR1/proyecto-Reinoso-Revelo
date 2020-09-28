@@ -27,3 +27,5 @@
 {"createdAt":1600717742512,"updatedAt":1601306910156,"id":2,"cedula":"1725279075","nombre":"Raul","apellido":"Cruz","telefono":"09999293443","correo":"","experiencia":"3 años","contrasenia":"sup3rSegur4555","usuario":"raul555","rol":"Veterinario","cedulaVeterinario":"1725279075","nombreVeterinario":"Raul","apellidoVeterinario":"Manco","celularVeterinario":"09999293443","experienciaVeterinario":"3 años","usuarioVeterinario":"raul555","contraseniaVeterinario":"sup3rSegur4555","esperiencia":"3 años","_id":2}
 {"$$deleted":true,"_id":2}
 {"createdAt":1600717742512,"updatedAt":1601306936408,"id":2,"cedula":"1725279075","nombre":"Raul","apellido":"Perez","telefono":"09999293443","correo":"","experiencia":"3 años","contrasenia":"sup3rSegur4555","usuario":"raul555","rol":"Veterinario","cedulaVeterinario":"1725279075","nombreVeterinario":"Raul","apellidoVeterinario":"Manco","celularVeterinario":"09999293443","experienciaVeterinario":"3 años","usuarioVeterinario":"raul555","contraseniaVeterinario":"sup3rSegur4555","esperiencia":"3 años","_id":2}
+{"$$deleted":true,"_id":2}
+{"$$deleted":true,"_id":1}

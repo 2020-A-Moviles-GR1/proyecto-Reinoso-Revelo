@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_login_veterinario.*
 class LoginAdminActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.115:1337"
     lateinit var listaUsuarios:ArrayList<Usuario>
+    lateinit var usuarioA: Usuario
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_admin)
@@ -45,6 +46,7 @@ class LoginAdminActivity : AppCompatActivity() {
                 this,
                 PantallaAdministradorActivity::class.java
         )
+        intentExplicito.putExtra("usuarioA",usuarioA)
         this.startActivity(intentExplicito)
     }
 
@@ -82,6 +84,7 @@ class LoginAdminActivity : AppCompatActivity() {
                 mensajeDeError()
             }else{
                 if(listaUsuarios[0].usuario==usuario&&listaUsuarios[0].contrasenia==contrasenia){
+                    usuarioA = listaUsuarios[0]
                     irPantallaPrincipalAdmin()
                     mensajeIngreso()
                 }else{
