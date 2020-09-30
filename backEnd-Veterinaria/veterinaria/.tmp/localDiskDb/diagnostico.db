@@ -1,2 +1,6 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"createdAt":1600657379597,"updatedAt":1600657379597,"id":1,"fechaAtencionDiagnostico":"20/09/2020","motivoConsultaDiagnostico":"Rivison Mensual","diagnosticoAtencion":"principios de rabia","cita":1,"_id":1}
+{"fechaAtencionDiagnostico":"10 / 9 / 2020","motivoConsultaDiagnostico":"Moquera","diagnosticoAtencion":"Moquera severa","cita":2,"createdAt":1601309420719,"updatedAt":1601309420719,"id":2,"_id":2}
+{"fechaAtencionDiagnostico":"20/09/2020","motivoConsultaDiagnostico":"Estres","diagnosticoAtencion":"El perro presenta estres en sus garras","cita":1,"createdAt":1601309651551,"updatedAt":1601309651551,"id":3,"_id":3}
+{"fechaAtencionDiagnostico":"20/09/2020","motivoConsultaDiagnostico":"Varicela","diagnosticoAtencion":"El perro presenta manchas rojas en su cuerpo","cita":1,"createdAt":1601309709645,"updatedAt":1601309709645,"id":4,"_id":4}
+{"fechaAtencionDiagnostico":"10 / 9 / 2020","motivoConsultaDiagnostico":"Esguince pata delantera","diagnosticoAtencion":"El perro presenta un fuerte esguince","cita":2,"createdAt":1601309848843,"updatedAt":1601309848843,"id":5,"_id":5}
