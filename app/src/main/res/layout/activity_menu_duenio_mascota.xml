@@ -10,7 +10,7 @@
         android:id="@+id/textView55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
         android:text="Citas solicitadas"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="@+id/edt_fecha_cita_duenio"
@@ -35,7 +35,7 @@
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Citas"
         android:textColor="#BE3838"
         android:textSize="24sp"
@@ -109,7 +109,7 @@
         android:id="@+id/edt_fecha_cita_duenio"
         android:layout_width="336dp"
         android:layout_height="41dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:clickable="true"
         android:ems="10"
         android:focusable="false"
@@ -145,10 +145,10 @@
 
     <ListView
         android:id="@+id/lv_citas"
-        android:layout_width="339dp"
-        android:layout_height="156dp"
+        android:layout_width="347dp"
+        android:layout_height="87dp"
         app:layout_constraintEnd_toEndOf="@+id/textView58"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="@+id/textView56"
         app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
@@ -156,7 +156,7 @@
         android:id="@+id/textView56"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="2dp"
         android:text="Nombre"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="@+id/textView55"
@@ -168,7 +168,7 @@
         android:id="@+id/textView57"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="36dp"
         android:text="Hora"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView56"
@@ -180,7 +180,7 @@
         android:id="@+id/textView58"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="60dp"
         android:text="Fecha"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView57"
@@ -219,5 +219,17 @@
         app:layout_constraintEnd_toEndOf="@+id/tv_menu_duenio_mascota"
         app:layout_constraintStart_toStartOf="@+id/tv_menu_duenio_mascota"
         app:layout_constraintTop_toBottomOf="@+id/tv_menu_duenio_mascota" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Estado"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView58"
+        app:layout_constraintStart_toEndOf="@+id/textView58"
+        app:layout_constraintTop_toTopOf="@+id/textView58"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

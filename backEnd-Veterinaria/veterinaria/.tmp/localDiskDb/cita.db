@@ -1,3 +1,8 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"createdAt":1600657053242,"updatedAt":1601309709648,"id":1,"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"21 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":1,"_id":1}
 {"createdAt":1600912644304,"updatedAt":1601309848847,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"12 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":1,"_id":2}
+{"fechaAtencionCita":"6 / 10 / 2020","HoraAtencionCita":"0:30","fechaProximaAtencionCita":"","estadoAtencionCita":"Por Atender","mascota":2,"createdAt":1601504514249,"updatedAt":1601504514249,"id":3,"_id":3}
+{"$$deleted":true,"_id":1}
+{"createdAt":1600657053242,"updatedAt":1601506996749,"id":1,"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"21 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":2,"_id":1}
+{"$$deleted":true,"_id":2}
+{"createdAt":1600912644304,"updatedAt":1601507003841,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"12 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":3,"_id":2}
