@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_editar_perfil_veterinario.*
 import kotlinx.android.synthetic.main.activity_registro_cita.*
 
 class DetallesCitaActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.115:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var cita : CitaDos
     lateinit var usuarioA: Usuario
 

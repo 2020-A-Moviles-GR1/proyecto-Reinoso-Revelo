@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.activity_menu_duenio_mascota.*
 import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 
 class MenuDuenioMascotaActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.102:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaMascotas:ArrayList<MascotaDos>
     lateinit var adaptador :ArrayAdapter<MascotaDos>
     lateinit var listaUsuarioUnico:ArrayList<Usuario>

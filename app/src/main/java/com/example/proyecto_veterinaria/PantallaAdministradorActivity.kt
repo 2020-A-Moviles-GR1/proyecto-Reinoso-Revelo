@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 import android.widget.ArrayAdapter as ArrayAdapter1
 
 class PantallaAdministradorActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.115:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaVeterinarios : ArrayList<Usuario>
     lateinit var adaptador: ArrayAdapter1<Usuario>
     lateinit var usuarioA: Usuario

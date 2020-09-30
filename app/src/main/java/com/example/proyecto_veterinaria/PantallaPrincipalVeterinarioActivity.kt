@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 
 
 class PantallaPrincipalVeterinarioActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.115:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaCitas: ArrayList<CitaDos>
     lateinit var adaptador: ArrayAdapter<CitaDos>
     lateinit var usuarioA: Usuario
