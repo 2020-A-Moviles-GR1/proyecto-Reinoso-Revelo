@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_editar_mascota.*
 import kotlinx.android.synthetic.main.activity_editar_perfil_veterinario.*
 
 class EditarPerfilVeterinarioActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.115:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaCitas: ArrayList<CitaDos>
     lateinit var adaptador: ArrayAdapter<CitaDos>
     lateinit var usuario: Usuario

@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_editar_mascota.*
 import kotlinx.android.synthetic.main.activity_registro_cita.*
 
 class EditarMascotaActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.102:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var mascota :MascotaDos
     lateinit var mascotasEditadas :ArrayList<MascotaDos>
     override fun onCreate(savedInstanceState: Bundle?) {

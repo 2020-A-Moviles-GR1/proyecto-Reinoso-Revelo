@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_visualizar_historial.*
 import kotlin.math.log
 
 class VisualizarHistorialActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.102:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var mascota :MascotaDos
     lateinit var listaDiagnostico:ArrayList<DiagnosticoDos>
     override fun onCreate(savedInstanceState: Bundle?) {

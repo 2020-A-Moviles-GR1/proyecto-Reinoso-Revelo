@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_login_admin.*
 import kotlinx.android.synthetic.main.activity_login_veterinario.*
 
 class LoginAdminActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.115:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaUsuarios:ArrayList<Usuario>
     lateinit var usuarioA: Usuario
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_registro_cita.*
 import kotlinx.android.synthetic.main.activity_registro_veterinario.*
 
 class RegistroCitaActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.102:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var mascota :MascotaDos
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

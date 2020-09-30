@@ -13,7 +13,7 @@ import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_login_cliente.*
 
 class LoginClienteActivity : AppCompatActivity() {
-    val urlPrincipal = "http://192.168.0.102:1337"
+    val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaUsuarios:ArrayList<Usuario>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
