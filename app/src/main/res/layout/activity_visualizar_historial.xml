@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Historial citas"
+        android:textColor="#BE3838"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Fecha"
+        android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="@+id/textView101"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="@+id/textView101"
         app:layout_constraintTop_toBottomOf="@+id/textView101" />
 
@@ -45,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:text="Diagnostico"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView102"
         app:layout_constraintStart_toEndOf="@+id/textView102"
         app:layout_constraintTop_toTopOf="@+id/textView102"
@@ -56,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:text="Motivo"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView103"
         app:layout_constraintStart_toEndOf="@+id/textView103"
         app:layout_constraintTop_toTopOf="@+id/textView103"
@@ -65,8 +70,9 @@
         android:id="@+id/lv_historial_citas"
         android:layout_width="403dp"
         android:layout_height="310dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/textView104"
-        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/textView102"
         app:layout_constraintTop_toBottomOf="@+id/textView103" />
 </androidx.constraintlayout.widget.ConstraintLayout>
