@@ -78,8 +78,8 @@ class Usuario (
 
     override fun toString(): String {
 
-        return  "$usuario               |" +
-                "$nombre               |" +
+        return  "$usuario        |       " +
+                "$nombre        |       " +
                 "$apellido"//+("citas=$cita")
 
     }
