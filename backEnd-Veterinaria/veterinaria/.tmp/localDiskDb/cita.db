@@ -1,15 +1,3 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"createdAt":1600657053242,"updatedAt":1600657053242,"id":1,"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"24/09/2020","estadoAtencionCita":"Por Atender","mascota":1,"_id":1}
-{"createdAt":1600912644304,"updatedAt":1600912644304,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"","estadoAtencionCita":"Por Atender","mascota":1,"_id":2}
-{"$$deleted":true,"_id":2}
-{"createdAt":1600912644304,"updatedAt":1601308914198,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"","estadoAtencionCita":"Atendido","mascota":1,"_id":2}
-{"$$deleted":true,"_id":2}
-{"createdAt":1600912644304,"updatedAt":1601309225597,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"","estadoAtencionCita":"Atendido","mascota":1,"_id":2}
-{"$$deleted":true,"_id":2}
-{"createdAt":1600912644304,"updatedAt":1601309420723,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"29 / 9 / 2020","estadoAtencionCita":"Atendido","mascota":1,"_id":2}
-{"$$deleted":true,"_id":1}
-{"createdAt":1600657053242,"updatedAt":1601309651546,"id":1,"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"14 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":1,"_id":1}
-{"$$deleted":true,"_id":1}
 {"createdAt":1600657053242,"updatedAt":1601309709648,"id":1,"fechaAtencionCita":"20/09/2020","HoraAtencionCita":"10:00","fechaProximaAtencionCita":"21 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":1,"_id":1}
-{"$$deleted":true,"_id":2}
 {"createdAt":1600912644304,"updatedAt":1601309848847,"id":2,"fechaAtencionCita":"10 / 9 / 2020","HoraAtencionCita":"8:15","fechaProximaAtencionCita":"12 / 10 / 2020","estadoAtencionCita":"Atendido","mascota":1,"_id":2}

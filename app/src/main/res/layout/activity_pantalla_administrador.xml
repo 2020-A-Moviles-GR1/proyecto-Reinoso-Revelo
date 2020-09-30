@@ -21,18 +21,21 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/comfortaa_bold"
         android:text="Gestión Veterinarios"
+        android:textColor="#BE3838"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_back_pantalla_admin"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="@+id/btn_back_pantalla_admin"
         app:layout_constraintTop_toBottomOf="@+id/btn_back_pantalla_admin" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="330dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="373dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Ingrese el usuario del veterinario"
         android:inputType="textPersonName"
@@ -48,7 +51,7 @@
         android:layout_marginTop="20dp"
         android:text="Usuario"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
@@ -56,7 +59,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="68dp"
         android:text="Nombre"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
@@ -67,7 +70,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="56dp"
         android:text="  Aperllido"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -76,21 +79,24 @@
 
     <ListView
         android:id="@+id/lv_veterinarios_pant_admin"
-        android:layout_width="402dp"
-        android:layout_height="185dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="386dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <Button
         android:id="@+id/btn_eliminra_veterinario_pant_adm"
-        android:layout_width="382dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="398dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#BE3838"
         android:text="Eliminar veterinario"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/lv_veterinarios_pant_admin"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="@+id/lv_veterinarios_pant_admin"
         app:layout_constraintTop_toBottomOf="@+id/lv_veterinarios_pant_admin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
