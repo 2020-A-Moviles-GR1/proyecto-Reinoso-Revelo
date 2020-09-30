@@ -1,2 +1,8 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"createdAt":1600657229065,"updatedAt":1600657229065,"id":1,"fechaVacuna":"20/09/2020","tipoVacuna":"contra la rabia","numDosisVacuna":"10 ml","cita":1,"_id":1}
+{"fechaVacuna":"10 / 9 / 2020","tipoVacuna":"Antigripal","numDosisVacuna":"20 ml","cita":2,"createdAt":1601308914173,"updatedAt":1601308914173,"id":2,"_id":2}
+{"fechaVacuna":"10 / 9 / 2020","tipoVacuna":"Antifiebre","numDosisVacuna":"20 ml","cita":2,"createdAt":1601309225529,"updatedAt":1601309225529,"id":3,"_id":3}
+{"fechaVacuna":"10 / 9 / 2020","tipoVacuna":"Antifluidos","numDosisVacuna":"30 ml","cita":2,"createdAt":1601309420713,"updatedAt":1601309420713,"id":4,"_id":4}
+{"fechaVacuna":"20/09/2020","tipoVacuna":"Antiestres","numDosisVacuna":"10 ml","cita":1,"createdAt":1601309651541,"updatedAt":1601309651541,"id":5,"_id":5}
+{"fechaVacuna":"20/09/2020","tipoVacuna":"Contra la varicela","numDosisVacuna":"40 ml","cita":1,"createdAt":1601309709642,"updatedAt":1601309709642,"id":6,"_id":6}
+{"fechaVacuna":"10 / 9 / 2020","tipoVacuna":"Muscular","numDosisVacuna":"20 ml","cita":2,"createdAt":1601309848849,"updatedAt":1601309848849,"id":7,"_id":7}

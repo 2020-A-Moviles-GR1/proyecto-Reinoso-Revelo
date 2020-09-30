@@ -76,26 +76,12 @@ class Usuario (
     }
 
 
-
     override fun toString(): String {
 
-        if (mascotas != null) {
-            return "Usuario (id=$id," +
-                    " createdAt=$createdAt," +
-                    " updatedAt=$updatedAt," +
-                    " cedula='$cedula'," +
-                    " nombre='$nombre'," +
-                    " correo='$correo'" + ("mascotas=$mascotas")
-        } else {
-        }
-        return "Usuario (id=$id," +
-                " createdAt=$createdAt," +
-                " updatedAt=$updatedAt," +
-                " cedula='$cedula'," +
-                " nombre='$nombre'," +
-                " correo='$correo'," +
-                " fechaCreacion=$fechaCreacion," +
-                " fechaActualizacion=$fechaActualizacion)" + ("")
+        return  "$usuario               |" +
+                "$nombre               |" +
+                "$apellido"//+("citas=$cita")
+
     }
 
 

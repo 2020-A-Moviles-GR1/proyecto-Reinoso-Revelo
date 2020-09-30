@@ -56,4 +56,13 @@ class CitaDos(
             return arrayOfNulls(size)
         }
     }
+
+    override fun toString(): String {
+
+        return  "${mascota?.nombreMascota} |  " +
+                "$HoraAtencionCita |  " +
+                "$fechaAtencionCita |  " +
+                "$estadoAtencionCita"
+
+    }
 }
