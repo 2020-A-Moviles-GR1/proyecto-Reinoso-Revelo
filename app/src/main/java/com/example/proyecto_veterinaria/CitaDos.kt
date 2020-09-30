@@ -59,9 +59,9 @@ class CitaDos(
 
     override fun toString(): String {
 
-        return  "${mascota?.nombreMascota} |  " +
-                "$HoraAtencionCita |  " +
-                "$fechaAtencionCita |  " +
+        return  "${mascota?.nombreMascota}  |   " +
+                "$HoraAtencionCita   |   " +
+                "$fechaAtencionCita   |   " +
                 "$estadoAtencionCita"
 
     }
