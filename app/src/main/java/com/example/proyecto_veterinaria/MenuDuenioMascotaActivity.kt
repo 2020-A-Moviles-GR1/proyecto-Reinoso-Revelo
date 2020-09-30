@@ -21,7 +21,9 @@ import kotlinx.android.synthetic.main.activity_pantalla_principal_veterinario.*
 class MenuDuenioMascotaActivity : AppCompatActivity() {
     val urlPrincipal = "http://192.168.0.104:1337"
     lateinit var listaMascotas:ArrayList<MascotaDos>
+    lateinit var listaCitas:ArrayList<CitaDos>
     lateinit var adaptador :ArrayAdapter<MascotaDos>
+    lateinit var adaptadorCita :ArrayAdapter<CitaDos>
     lateinit var listaUsuarioUnico:ArrayList<Usuario>
     var posicion:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,13 +31,23 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu_duenio_mascota)
 
         listaMascotas=arrayListOf()
+        listaCitas=arrayListOf()
         listaUsuarioUnico=arrayListOf()
         adaptador=ArrayAdapter(
             this,//contexto
             android.R.layout.simple_list_item_1,//nombre layout
             listaMascotas//lista
         )
+
+        adaptadorCita=ArrayAdapter(
+            this,//contexto
+            android.R.layout.simple_list_item_1,//nombre layout
+            listaCitas//lista
+        )
+
+        lv_citas.adapter=adaptadorCita
         lv_mascotas.adapter=adaptador
+
         lv_mascotas
             .onItemClickListener= AdapterView.OnItemClickListener{
                 parent, view, position, id ->
@@ -52,6 +64,7 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
             //irPerfilDeMascota()
         }
         obtenerMascotas()
+        obtenerCita()
         cargarSipinerCliente()
 
         sp_duenio_mascota.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
@@ -239,6 +252,40 @@ class MenuDuenioMascotaActivity : AppCompatActivity() {
                 }
             }
         return listaUsuarioUnico[0]
+    }
+
+    fun obtenerCita(){
+            val url = urlPrincipal + "/cita"
+            url
+                .httpGet()
+                .responseString { request, response, result ->
+                    when (result) {
+                        is Result.Success -> {
+                            val data = result.get()
+                            // Log.i("http-klaxon", "Data: ${data}")
+                            val usuarios = Klaxon()
+                                //.converter(Diagnostico.myConverter)
+                                //.parseArray<Diagnostico>(data)
+                                .parseArray<CitaDos>(data)
+                            if (usuarios != null) {
+                                usuarios.forEach {
+                                    Log.i(
+                                        "http-klaxon",
+                                        "Nombre: ${it.HoraAtencionCita}  apellido ${it.mascota?.nombreMascota}"
+                                    )
+                                    listaCitas.add(it)
+                                    runOnUiThread(Runnable {
+                                        adaptadorCita.notifyDataSetChanged()
+                                    })
+                                }
+                            }
+                        }
+                        is Result.Failure -> {
+                            val ex = result.getException()
+                            Log.i("http-klaxon", "Error: ${ex.message}")
+                        }
+                    }
+                }
     }
 
 

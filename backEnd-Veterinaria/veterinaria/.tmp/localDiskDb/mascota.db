@@ -1,2 +1,10 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"createdAt":1600655070346,"updatedAt":1600970092095,"id":1,"nombreMascota":"cachetes","pesoMascota":"25 kg","edadMascota":"3 años","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"a anio","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":1,"createdAt":1601503422294,"updatedAt":1601503422294,"id":2,"_id":2}
+{"$$deleted":true,"_id":2}
+{"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"a anio","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":4,"createdAt":1601503422294,"updatedAt":1601503440554,"id":2,"_id":2}
+{"$$deleted":true,"_id":2}
+{"nombreMascota":"cachetes","pesoMascota":"20 kg","edadMascota":"1 año","razaMascota":"pug","especieMascota":"canina","fechaNacimientoMascota":"20/09/2020","usuario":4,"createdAt":1601503422294,"updatedAt":1601503586814,"id":2,"_id":2}
+{"nombreMascota":"Kiara","pesoMascota":"25 kg","edadMascota":"2 años","razaMascota":"Pastor Aleman","especieMascota":"canina","fechaNacimientoMascota":"20/07/2018","usuario":4,"createdAt":1601503633298,"updatedAt":1601503633298,"id":3,"_id":3}
+{"nombreMascota":"Maximus","pesoMascota":"20 kg","edadMascota":"3 años","razaMascota":"Poodle","especieMascota":"canina","fechaNacimientoMascota":"10/11/2018","usuario":4,"createdAt":1601503749182,"updatedAt":1601503749182,"id":4,"_id":4}

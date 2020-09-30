@@ -1,3 +1,11 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"cedula","unique":true,"sparse":false}}
 {"createdAt":1600891132683,"updatedAt":1600891132683,"id":3,"cedula":"1710121169","nombre":"Martin","apellido":"Ortiz","telefono":"0964783542","correo":"","experiencia":"3 años","contrasenia":"sup3rSegur4","usuario":"martin35","rol":"Veterinario","_id":3}
+{"cedula":"1725279077","nombre":"Carlos","apellido":"Rodas","telefono":"096362865","correo":"carlos.rodas@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"carlos31","rol":"Cliente","createdAt":1601502662163,"updatedAt":1601502662163,"id":4,"_id":4}
+{"cedula":"1725279177","nombre":"Lucas","apellido":"Rivera","telefono":"09963728536","correo":"lucas.rivera@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"lucas32","rol":"Cliente","createdAt":1601502810156,"updatedAt":1601502810156,"id":6,"_id":6}
+{"cedula":"1725279178","nombre":"Lucia","apellido":"Lopez","telefono":"09963728536","correo":"lucia.lopez@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"lucia33","rol":"Cliente","createdAt":1601502883837,"updatedAt":1601502883837,"id":7,"_id":7}
+{"cedula":"1725279179","nombre":"Luis","apellido":"Perez","telefono":"09963728536","correo":"luis.perez@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"luis34","rol":"Veterinario","createdAt":1601502989451,"updatedAt":1601502989451,"id":8,"_id":8}
+{"cedula":"1725279279","nombre":"Marta","apellido":"Soria","telefono":"09970728531","correo":"marta.soria@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"marta35","rol":"Veterinario","createdAt":1601503043050,"updatedAt":1601503043050,"id":9,"_id":9}
+{"cedula":"1725279280","nombre":"Lorena","apellido":"Sanchez","telefono":"09945637531","correo":"lorena.sanchez@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"lorena36","rol":"Veterinario","createdAt":1601503099563,"updatedAt":1601503099563,"id":11,"_id":11}
+{"$$deleted":true,"_id":8}
+{"cedula":"1725279179","nombre":"Luis","apellido":"Perez","telefono":"09963728536","correo":"luis.perez@epn.edu","experiencia":"","contrasenia":"sup3rSegur4","usuario":"luis34","rol":"Administrador","createdAt":1601502989451,"updatedAt":1601503198838,"id":8,"_id":8}
